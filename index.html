@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ทริปเขาใหญ่สไตล์น่ารักปุ๊กปิ๊ก 🌸 4 วัน 3 คืน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #fff5f7; /* Soft pink background */
+            background-image: radial-gradient(#ffced6 2px, transparent 2px);
+            background-size: 30px 30px;
+            color: #594a4e;
+            margin: 0;
+            padding: 16px;
+            line-height: 1.6;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 24px;
+            box-shadow: 0 8px 20px rgba(255, 107, 129, 0.2);
+            border: 4px solid #ffffff;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6b81;
+            font-size: 1.6rem;
+            margin-top: 10px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .header-desc {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #ff9fa8;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        
+        /* Cute Card */
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 24px 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(255, 168, 178, 0.15);
+            border: 2px solid #fff0f3;
+        }
+        
+        h2 {
+            color: #ff4757;
+            font-size: 1.25rem;
+            margin-top: 0;
+            margin-bottom: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ffeaa7; /* Soft yellow highlight */
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin-left: -5px;
+        }
+
+        .concept {
+            background-color: #f1f2f6;
+            padding: 12px 16px;
+            border-radius: 16px;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            color: #57606f;
+            text-align: center;
+            border: 1px dashed #dfe4ea;
+        }
+        
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding-left: 24px;
+            margin-top: 20px;
+            border-left: 4px dotted #ffcccb;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 35px;
+        }
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        .timeline-item::before {
+            content: '🌸';
+            position: absolute;
+            left: -37px;
+            top: 2px;
+            font-size: 1.2rem;
+            background: #fff;
+            border-radius: 50%;
+            padding: 2px;
+        }
+        .time {
+            font-weight: 700;
+            color: #ffa502;
+            font-size: 1.15rem;
+            display: block;
+            margin-bottom: 4px;
+            background: #fff3cd;
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 12px;
+        }
+        .activity-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            color: #2f3542;
+        }
+
+        /* Choices Box */
+        .choices-container {
+            background: #f8faff;
+            border: 2px solid #eccc68;
+            border-radius: 16px;
+            padding: 16px;
+            margin-top: 12px;
+        }
+        .choices-header {
+            font-weight: 600;
+            color: #ff6348;
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            justify-content: center;
+            background: #fff;
+            padding: 8px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .choice-item {
+            background: #fff;
+            border: 2px solid #f1f2f6;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: transform 0.2s;
+        }
+        .choice-item:active {
+            transform: scale(0.98);
+            border-color: #ff7f50;
+        }
+        .choice-item:last-child {
+            margin-bottom: 0;
+        }
+        .choice-name {
+            font-weight: 600;
+            color: #3742fa;
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .choice-desc {
+            font-size: 0.95rem;
+            color: #747d8c;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        
+        /* Links & Buttons */
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .btn-map-sm {
+            display: inline-flex;
+            align-items: center;
+            background-color: #ff7f50;
+            color: #fff !important;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 127, 80, 0.3);
+            gap: 6px;
+        }
+        .btn-map-sm:active {
+            background-color: #ff6348;
+        }
+        .route-badge {
+            display: block;
+            background: #7bed9f;
+            color: #2ed573;
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(46, 213, 115, 0.3);
+        }
+        .tag {
+            display: inline-block;
+            background: #ffeaa7;
+            color: #d35400;
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ภาพที่ลูกค้าขอให้ใส่ -->
+    <img src="DSCF1340.JPG" alt="Khao Yai Trip" class="hero-image" onerror="this.src='https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1000&auto=format&fit=crop';">
+
+    <h1>🌷 ทริปเขาใหญ่สไตล์ปุ๊กปิ๊ก<br>4 วัน 3 คืน 🐻</h1>
+    <div class="header-desc">
+        ✨ คัดมาให้แล้ว! ทุกที่เดินทางไม่เกิน 20 นาทีจากที่พัก ไม่เหนื่อยแน่นอน ✨
+    </div>
+
+    <!-- DAY 1 -->
+    <div class="card">
+        <h2>📅 วันที่ 1: ชิลแก่งคอย & ปาร์ตี้ BBQ 🥓</h2>
+        <div class="concept">แวะคาเฟ่ทางผ่านเข้าแก่งคอย แชะภาพแสงเย็นที่เขื่อน แล้วกลับมาปาร์ตี้วิลล่า</div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="time">10:00 น.</span>
+                <div class="activity-title">ออกเดินทางจาก รังสิต 🚗💨</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">10:30 น. - 11:30 น.</span>
+                <div class="activity-title">แวะซื้อเสบียงทำ BBQ 🛒</div>
+                <div class="choice-desc">โลตัส หรือ แม็คโคร คลองหลวง ของสดเพียบ!</div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Makro+Klong+Luang" class="btn-map-sm" target="_blank">📍 แม็คโคร คลองหลวง</a>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">12:30 น. - 13:45 น.</span>
+                <div class="activity-title">มื้อเที่ยง & คาเฟ่โซนสระบุรี/แก่งคอย ☕</div>
+                
+                <div class="choices-container">
+                    <div class="choices-header">✨ เลือกร้านใกล้ที่พัก T Villa ✨</div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">1. Q E A R T Cafe <span class="tag">อาร์ต & คลีน</span></span>
+                        <div class="choice-desc">อยู่แก่งคอยเลย ใกล้ที่พักมาก! ร้านสีขาวคลีนๆ แสงสวย ถ่ายรูปขึ้นสุดๆ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Q+E+A+R+T+Cafe+Saraburi" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">2. The Harmony Cafe <span class="tag">สวนดอกไม้</span></span>
+                        <div class="choice-desc">อยู่ในแก่งคอยเช่นกัน มีน้ำตกจำลองและสวนดอกไม้ร่มรื่น มุมถ่ายรูปเยอะมาก</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=The+Harmony+Cafe+Saraburi" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">3. 9th September <span class="tag">ร่มรื่น ต้นไม้ใหญ่</span></span>
+                        <div class="choice-desc">ทางผ่านตัวเมืองสระบุรี คาเฟ่บ้านไม้ใต้ร่มไม้ใหญ่ บรรยากาศชิลมาก</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=9th+September+Eat+Meet+Tree" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">4. Proof Cafe <span class="tag">สายเกาหลี</span></span>
+                        <div class="choice-desc">ทางผ่านเมืองสระบุรี ตกแต่งสไตล์เกาหลีมินิมอล กระจกบานใหญ่ น่ารักๆ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Proof+Cafe+Saraburi" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">14:00 น.</span>
+                <div class="activity-title">เช็คอิน T Villa แก่งคอย 🏡</div>
+                <div class="choice-desc">พักผ่อน ว่ายน้ำ ถ่ายรูปในวิลล่าสวยๆ</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">15:30 น. - 17:30 น.</span>
+                <div class="activity-title">เขื่อนป่าสักชลสิทธิ์ 🌅</div>
+                <div class="choice-desc">เดินเล่นรับลมเย็น ถ่ายรูปแสงสีทอง (Golden Hour) สุดโรแมนติกที่ท้ายเขื่อน</div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Pa+Sak+Jolasid+Dam" class="btn-map-sm" target="_blank">📍 แผนที่เขื่อน</a>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">18:30 น. เป็นต้นไป</span>
+                <div class="activity-title">ปาร์ตี้ BBQ ที่วิลล่า 🥓🍻</div>
+                <div class="choice-desc">กลับมาปิ้งย่าง ฟังเพลงชิลๆ พักผ่อนให้เต็มอิ่ม</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="card">
+        <h2>📅 วันที่ 2: สูดโอโซนอุทยาน 🌲</h2>
+        <div class="concept">ขึ้นเขาใหญ่ สูดอากาศบริสุทธิ์ แวะคาเฟ่ใกล้ที่พัก (โซนหมูสี) ขับรถไม่เกิน 20 นาที!</div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="time">10:30 น. - 12:30 น.</span>
+                <div class="activity-title">จุดถ่ายรูปบนอุทยานแห่งชาติเขาใหญ่ 🦌</div>
+                
+                <div class="choices-container">
+                    <div class="choices-header">✨ เลือกแวะจุดไหนดีน้า ✨</div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">1. อ่างเก็บน้ำสายศร <span class="tag">วิวทะเลสาบ</span></span>
+                        <div class="choice-desc">จุดถ่ายรูปยอดฮิต สะท้อนเงาต้นไม้สวยงาม มักมีน้องกวางมาเดินเล่นด้วย</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Sai+Sorn+Reservoir" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">2. หอดูสัตว์หนองผักชี <span class="tag">ทุ่งหญ้า</span></span>
+                        <div class="choice-desc">เดินสบายๆ เจอทุ่งหญ้ากว้าง ฟีลเหมือนอยู่เมืองนอก</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Nong+Phak+Chi+Observation+Tower" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">13:00 น. - 14:00 น.</span>
+                <div class="activity-title">มื้อเที่ยงจัดเต็ม 🍽️</div>
+                
+                <div class="choices-container">
+                    <div class="choices-header">✨ ร้านดังใกล้ทางลงอุทยาน (โซนหมูสี) ✨</div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">1. ยุ้งข้าว เขาใหญ่ <span class="tag">มิชลินไกด์</span></span>
+                        <div class="choice-desc">อาหารไทยรสจัดจ้าน การันตีด้วยรางวัล Michelin อร่อยมากกกก</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=ยุ้งข้าว+เขาใหญ่" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">2. Penlaos (เป็นลาว) <span class="tag">มิชลินไกด์</span></span>
+                        <div class="choice-desc">อาหารอีสานระดับพรีเมียม ส้มตำ ไก่ย่าง แซ่บสุด ร้านใหญ่นั่งสบาย</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Penlaos+Khaoyai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">3. ครัวเขาใหญ่ <span class="tag">ซี่โครงหมูรมควัน</span></span>
+                        <div class="choice-desc">ร้านระดับตำนาน เมนูเด็ดคือแฮมซี่โครงหมูรมควันเนื้อนุ่มละมุน</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Krua+Khao+Yai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">14:30 น. - 17:00 น.</span>
+                <div class="activity-title">คาเฟ่สวยๆ ใกล้ที่พัก A1985 📷</div>
+                
+                <div class="choices-container">
+                    <div class="choices-header">✨ คัดมาแล้ว! ขับรถไม่เกิน 15-20 นาที ✨</div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">1. Bucolic Khaoyai <span class="tag">ธรรมชาติอลังการ</span></span>
+                        <div class="choice-desc">พื้นที่กว้าง มีบ่อน้ำ วิวภูเขา มีน้องสัตว์น่ารักๆ แสงเย็นสวยมาก</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Bucolic+Khaoyai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">2. EL Cafe Khaoyai <span class="tag">มินิมอลริมผา</span></span>
+                        <div class="choice-desc">อยู่ใกล้ทางขึ้นอุทยานเลย! ร้านกระจกขาวมินิมอล วิวหน้าผาและต้นไม้เขียวๆ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=EL+Cafe+Khaoyai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">3. Yellow Submarine <span class="tag">สถาปัตยกรรมเท่ๆ</span></span>
+                        <div class="choice-desc">คาเฟ่โทนสีดำสนิทกลางป่า ถ่ายรูปออกมาดูชิคและแพงมาก</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Yellow+Submarine+Coffee+Tank" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">4. Flaneur Tea <span class="tag">สวนอังกฤษ</span></span>
+                        <div class="choice-desc">จิบชาในสวนสไตล์ผู้ดีอังกฤษ ต้นไม้ร่มรื่น ขนมอบอร่อยมาก</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Flaneur+Tea+Khaoyai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">5. Oria Cafe <span class="tag">ราวตากผ้ามินิมอล</span></span>
+                        <div class="choice-desc">โดดเด่นด้วยราวตากผ้าวิวภูเขา ตัวร้านสีขาวมินิมอล ถ่ายรูปเกาหลีสุดๆ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Oria+Cafe+Khaoyai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">17:30 น.</span>
+                <div class="activity-title">เช็คอินเข้าที่พัก A1985 🛌</div>
+                <div class="choice-desc">พักผ่อนสบายๆ เตรียมตัวลุยวันพรุ่งนี้ต่อ!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="card">
+        <h2>📅 วันที่ 3: สวนสัตว์ & กิจกรรมสุดคิวท์ 🦒</h2>
+        <div class="concept">วันแห่งความสนุก ถ่ายรูปเล่น แล้วย้ายไปนอนโรงแรมฟีลธรรมชาติ (โซนเดิม เดินทางใกล้ๆ)</div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="time">10:00 น. - 12:30 น.</span>
+                <div class="activity-title">กิจกรรมสนุกๆ ยามเช้า 🎨</div>
+                
+                <div class="choices-container">
+                    <div class="choices-header">✨ เลือกที่เที่ยวโซนหมูสี (ใกล้ A1985) ✨</div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">1. Bonanza Exotic Zoo <span class="tag">สวนสัตว์</span></span>
+                        <div class="choice-desc">ป้อนอาหารยีราฟ อัลปาก้า สิงโตขาว ร่มรื่นเดินง่าย น่ารักมากๆ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Bonanza+Exotic+Zoo" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">2. Hokkaido Flower Park <span class="tag">ทุ่งดอกไม้</span></span>
+                        <div class="choice-desc">ทุ่งดอกไม้หลากสีสันสุดอลังการ มีไอศกรีมอร่อยๆ ให้ทานด้วย</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Hokkaido+Flower+Park+Khaoyai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">3. Khao Yai Art Museum <span class="tag">เสพศิลป์</span></span>
+                        <div class="choice-desc">เดินตากแอร์เย็นๆ ชมศิลปะร่วมสมัยของไทย สถาปัตยกรรมสวยมาก (เข้าฟรี)</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Khao+Yai+Art+Museum" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">4. น้ำพุธรรมชาติบ้านท่าช้าง <span class="tag">น้ำใสสีฟ้า</span></span>
+                        <div class="choice-desc">ตาน้ำผุดสีฟ้าใสแจ๋ว แวะนั่งแช่เท้าคลายร้อน ถ่ายรูปสวย (เข้าฟรี)</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Nam+Phut+Natural+Spring" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">13:00 น. - 14:00 น.</span>
+                <div class="activity-title">มื้อเที่ยงแบบลูกคุณหนู 🍽️</div>
+                
+                <div class="choices-container">
+                    <div class="choices-header">✨ เลือกร้านเด็ดใกล้ๆ ขับรถแป๊บเดียว ✨</div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">1. Midwinter Green <span class="tag">ปราสาท/นานาชาติ</span></span>
+                        <div class="choice-desc">ร้านอาหารรูปทรงปราสาทยุโรป อาหารอร่อยมาก ถ่ายรูปสวยทุกมุม</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Midwinter+Green" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">2. Lookkai Khao Yai (ลูกไก่) <span class="tag">โฮมเมด/คาเฟ่</span></span>
+                        <div class="choice-desc">ร้านสไตล์โรงนาฝรั่งเศส อาหารสไตล์โฮมเมดและขนมเค้กอร่อยสุดๆ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Lookkai+Khao+Yai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">3. Ribs mannn <span class="tag">ราชาเนื้อรมควัน</span></span>
+                        <div class="choice-desc">ถ้าชอบกินสเต็กเนื้อซี่โครง ที่นี่คืออันดับหนึ่งในใจของหลายๆ คน</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Ribs+mannn" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">14:30 น. - 16:00 น.</span>
+                <div class="activity-title">คาเฟ่ฟีลเมืองนอกสุดปัง 🏰</div>
+                
+                <div class="choices-container">
+                    <div class="choices-header">✨ จุดเช็คอินที่ไม่ควรพลาด ✨</div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">1. Primo Piazza <span class="tag">อัลปาก้า/ยุโรป</span></span>
+                        <div class="choice-desc">ใกล้ที่สุด! สถาปัตยกรรมอิตาลี ไฮไลท์คือป้อนอาหารอัลปาก้าและน้องแกะ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Primo+Piazza" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">2. Blossom Bloom <span class="tag">มินิมอล/สวนดอกไม้</span></span>
+                        <div class="choice-desc">ตึกสีขาวกลางสวนดอกไม้และภูเขา จุดทำคอนเทนต์ยอดฮิตของสาวๆ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Blossom+Bloom+Khaoyai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">3. Toscana Valley <span class="tag">อิตาลี</span></span>
+                        <div class="choice-desc">ขับรถออกไปประมาณ 20 นาที มีหอเอนปิซ่า ถ่ายรูปได้ฟีลเมืองนอกของจริง</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Toscana+Valley" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">4. Oliva Cafe <span class="tag">ต้นโอลีฟยักษ์</span></span>
+                        <div class="choice-desc">ตกแต่งด้วยต้น Olive ยักษ์ โทนสีครีม-เขียว ถ่ายพอร์ตเทรตสวยปังมาก</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Oliva+Cafe+Khaoyai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">16:30 น.</span>
+                <div class="activity-title">เช็คอินที่พักใหม่ 🌿</div>
+                
+                <div class="choices-container">
+                    <div class="choices-header">✨ คัดมาเฉพาะที่พักโซนหมูสี เดินทางง่าย ✨</div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">1. RAK NA KHAOYAI (รัก ณ เขาใหญ่)</span>
+                        <div class="choice-desc">รีสอร์ทร่มรื่น ต้นไม้เยอะมาก เงียบสงบ โลเคชั่นดีสุดๆ อยู่ใจกลางหมูสี</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=RAK+NA+KHAOYAI" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">2. Tharapana Resort (ธาราพานา)</span>
+                        <div class="choice-desc">บ้านพักเป็นหลังๆ ท่ามกลางธรรมชาติ มีโซนติดริมลำธาร ฟังเสียงน้ำไหล</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Tharapana+Resort" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">3. Khaoyai Paradise on Earth</span>
+                        <div class="choice-desc">ร่มรื่นด้วยแมกไม้ใหญ่ ติดลำธาร เหมาะสำหรับนั่งเอาเท้าแช่น้ำตอนเช้าๆ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Khaoyai+Paradise+on+Earth" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">4. Estella Khao Yai</span>
+                        <div class="choice-desc">ธรรมชาติแบบสวนอังกฤษที่จัดแต่งอย่างสวยงาม หรูหรา สะอาดตา</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Estella+Khao+Yai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="card">
+        <h2>📅 วันที่ 4: แวะรายทางก่อนกลับ 🚗</h2>
+        <div class="concept">ค่อยๆ ขับกลับรังสิต แวะสถานที่ทางผ่านตลอดเส้นทาง ถนนเส้นผ่านศึก-กุดคล้า สวยมาก!</div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="time">11:00 น. - 12:30 น.</span>
+                <div class="activity-title">จุดแวะเที่ยว/ของฝาก ทางผ่าน 🎁</div>
+                
+                <div class="choices-container">
+                    <div class="choices-header">✨ คัดมาเฉพาะเส้นทางกลับ กทม. ✨</div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">1. PB Valley Khao Yai Winery <span class="tag">ไร่องุ่น</span></span>
+                        <div class="choice-desc">อยู่เส้นผ่านศึก-กุดคล้า ทัวร์ไร่องุ่น ซื้อน้ำองุ่นคั้นสดและขนมกลับไปฝากที่บ้าน</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=PB+Valley+Khao+Yai+Winery" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">2. Farm Chokchai (ฟาร์มโชคชัย) <span class="tag">สเต็ก & นมวัว</span></span>
+                        <div class="choice-desc">ติดถนนใหญ่มิตรภาพ แวะทานไอศกรีมนมสด (Umm!..Milk) ซื้อของฝาก</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Farm+Chokchai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">3. ไร่ข้าวโพดสุวรรณ <span class="tag">ของฝากชื่อดัง</span></span>
+                        <div class="choice-desc">ติดถนนใหญ่มิตรภาพ ซื้อน้ำนมข้าวโพดคั้นสด ข้าวโพดต้ม ทานเพลินๆ บนรถ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Suwan+Sweet+Corn+Farm" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">13:00 น. - 14:30 น.</span>
+                <div class="activity-title">คาเฟ่ทางผ่านขากลับสุดชิค 🍵</div>
+                
+                <div class="choices-container">
+                    <div class="choices-header">✨ คาเฟ่เส้นผ่านศึก-กุดคล้า (ทางกลับ) ✨</div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">1. Khaam Khaoyai (ขาม) <span class="tag">มัทฉะ/ญี่ปุ่น</span></span>
+                        <div class="choice-desc">สายชาเขียวห้ามพลาด คาเฟ่สไตล์ญี่ปุ่นใต้ร่มไม้ขาม ชาเขียวพรีเมียมสุดๆ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Khaam+Khaoyai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                    
+                    <div class="choice-item">
+                        <span class="choice-name">2. Pirom Cafe (ภิรมย์ คาเฟ่) <span class="tag">ไร่ชา/ทะเลสาบ</span></span>
+                        <div class="choice-desc">บรรยากาศคล้ายปางอุ๋ง มีทะเลสาบและพุ่มไม้เรียงราย ลมพัดเย็นสบาย ถ่ายรูปสวย</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Pirom+Cafe" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">3. The Birder's Lodge <span class="tag">โรงนาไม้คลาสสิก</span></span>
+                        <div class="choice-desc">คาเฟ่ไม้คลาสสิกที่ถูกปกคลุมด้วยไม้เลื้อย ถ่ายรูปชิคมากก แวะง่ายสุดๆ</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=The+Birder's+Lodge" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+
+                    <div class="choice-item">
+                        <span class="choice-name">4. Within Khaoyai <span class="tag">สโตนเฮนจ์เขาใหญ่</span></span>
+                        <div class="choice-desc">คาเฟ่ที่มีหินก้อนยักษ์เรียงรายฟีล Stonehenge มุมถ่ายรูปแปลกตา ไม่ซ้ำใคร</div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Within+Khaoyai" class="btn-map-sm" target="_blank">🗺️ ดูพิกัด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time">15:30 น. - 16:00 น.</span>
+                <div class="activity-title">ถึง รังสิต โดยสวัสดิภาพ 🎉</div>
+                <div class="choice-desc">จบทริปแบบฟินๆ ไม่เหนื่อยเดินทาง มีเวลาพักผ่อนก่อนเริ่มสัปดาห์ใหม่!</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
